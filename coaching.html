@@ -179,7 +179,20 @@ li {
   .container {
     padding: 0 16px;
   }
+/* ===== 強制モバイル修正 ===== */
+@media (max-width: 768px) {
 
+  .hero-image {
+    margin-top: -80px !important;
+    height: 260px !important;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 2;
+  }
+
+}
 }
   
 </style>
