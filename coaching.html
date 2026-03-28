@@ -1,10 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Private Coaching</title>
+
 <style>
 
 body {
   margin: 0;
   background: #0b0b0b;
   color: #eaeaea;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.7;
 }
 
@@ -16,34 +23,38 @@ body {
   position: relative;
 }
 
-/* HERO */
 .hero {
   display: flex;
   align-items: center;
   gap: 60px;
 }
 
-/* テキスト */
 .hero-text {
   flex: 1;
+  position: relative;
   z-index: 2;
 }
 
-/* 画像 */
 .hero-image {
   width: 320px;
   height: 420px;
   overflow: hidden;
   border-radius: 200px 200px 0 200px;
   flex-shrink: 0;
-  margin-left: -60px; /* ← 文字に寄せる */
+  mergin-left: -40px;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top; /* 顔守る */
+  object-position: cover top;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* タイトル */
@@ -52,7 +63,7 @@ h1 {
   font-weight: 500;
   letter-spacing: -0.5px;
   margin-bottom: 16px;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .subtitle {
@@ -114,7 +125,7 @@ li {
   opacity: 0.8;
 }
 
-/* カード */
+/* カード（testimonial） */
 .card {
   border: 1px solid rgba(255,255,255,0.08);
   padding: 24px;
@@ -127,14 +138,12 @@ li {
   margin-top: 12px;
 }
 
-/* =========================
-   🔴 モバイル完全修正
-========================= */
 @media (max-width: 768px) {
 
   .hero {
+    display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
   }
 
   .hero-text {
@@ -143,26 +152,160 @@ li {
 
   .hero-image {
     width: 100%;
-    height: 260px; /* ← 下だけカット */
+    height: 300px;
     border-radius: 160px 160px 0 0;
-    margin-top: -80px; /* ← 文字と自然に重ねる */
-    margin-left: 0;
+    margin-top: -40xp;
+  }
+
+}
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; /* 顔を守る */
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.2;
   }
 
   .subtitle {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 40px;
   }
 
   .container {
     padding: 0 16px;
   }
+/* ===== 強制モバイル修正 ===== */
+@media (max-width: 768px) {
 
+  .hero-image {
+    margin-top: -80px !important;
+    height: 260px !important;
+  }
 
+  .hero-text {
+    position: relative;
+    z-index: 2;
+  }
+
+}
+}
+  
 </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="hero">
+
+  <div class="hero-text">
+    <h1>1:1 Private Coaching</h1>
+
+    <p class="subtitle">
+      Clarity. Direction. Execution.<br>
+      Stop drifting. Start choosing yourself.
+    </p>
+  </div>
+
+  <div class="hero-image">
+    <img src="me.jpg" alt="Suzuha">
+  </div>
+
+</div>
+  
+<div class="section">
+<h2>About</h2>
+
+<p>I’ve lived across 9 countries in the US, Europe, and Asia.</p>
+
+<p>
+I know what it feels like to not belong anywhere.
+To constantly adjust, perform, prove, and question who you really are.
+</p>
+
+<p>
+After returning to Japan, I experienced a deep disconnect.
+I lost my sense of self and struggled mentally.
+I had to rebuild without support and without being understood.
+</p>
+
+<p>
+Over the past 10 years, I worked through that process.
+Studying psychology, working with individuals, and rebuilding my life intentionally.
+</p>
+
+<p>
+Embracing both my feminine and masculine energy and integrating them changed my life.
+</p>
+
+<p>
+Now, it’s my mission to help you access both.
+Your feminine: intuition, emotion, creativity.
+Your masculine: clarity, structure, direction.
+</p>
+
+<p>
+So you can stop drifting and start living your dream life.
+</p>
+
+<p>
+This session is not about motivation.
+It’s about seeing clearly, choosing consciously, and moving forward.
+</p>
+</div>
+
+<div class="section">
+<h2>What You Get</h2>
+<ul>
+  <li>Identify what’s actually blocking you</li>
+  <li>Cut through confusion and overthinking</li>
+  <li>Clear next direction</li>
+  <li>Action steps you can execute immediately</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Price</h2>
+<p class="price">¥26,000 / 60 min</p>
+
+<a href="https://buy.stripe.com/cNi00l2R00tMbSRfAt5AQ04" target="_blank" class="button">
+Book Private Session
+</a>
+</div>
+
+<div class="section">
+<h2>Client Results</h2>
+
+<div class="card">
+<p>
+"I was new to Japan and felt overwhelmed. It was a great session! I learned a lot about Japan and the apartment-search process. Suzuha me really useful insights, and she even helped communicate with the property owner while I was busy working, which made everything much smoother and less stressful. She also took the time to understand my lifestyle, and tailored the sessions around what I needed. Thanks to her support, I even found groups to play football with here in Japan, which is one of my hobbies. Overall, the way she organized and guided our sessions made me feel supported at every step and much more confident about settling in. "
+</p>
+<div class="name">— Patrick, Kyrgyzstan</div>
+</div>
+
+<div class="card">
+<p>
+"It was a great experience. She is very perceptive helped me deal with things that have been on my mind for a long time. Surviging and thriving is difficult and I was long stuck in survival, but she helped me gain the right mindset and put my issues behind. She helped me deal with deepest wishes for a long time and move forward with clarity."
+</p>
+<div class="name">— Arpit, India</div>
+</div>
+
+<div class="card">
+<p>
+"Very non-judgmental and gave me ideas tailored exactly to my situation."
+</p>
+<div class="name">— Mario, Italy</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
