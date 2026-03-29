@@ -40,8 +40,8 @@ body {
 }
 
 .hero-image {
-  width: 320px;
-  height: 420px;
+  width: 300px; /* 少しだけ縮小 */
+  height: 400px;
   overflow: hidden;
   border-radius: 200px 200px 0 200px;
   flex-shrink: 0;
@@ -74,14 +74,14 @@ h1 {
   margin-bottom: 100px;
 }
 
-/* 見出し */
+/* 見出し（強く） */
 h2 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  opacity: 0.6;
+  color: #ffffff; /* ← 強い白に変更 */
 }
 
 /* テキスト */
@@ -159,27 +159,18 @@ li {
 
   .hero-image {
     position: absolute;
-    right: -20px;
+    right: -10px;
     top: 60px;
-    width: 220px; /* 小さく */
-    height: 300px;
+    width: 200px; /* 少しだけ小さく */
+    height: 260px;
     border-radius: 140px 140px 0 140px;
-    opacity: 0.6;
+    opacity: 0.9; /* ← 顔が見えるように */
     z-index: 1;
   }
 
-  /* 弱いグラデーション（自然） */
+  /* ❌ グラデーション削除 */
   .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(11,11,11,1) 60%,
-      rgba(11,11,11,0.3) 85%,
-      rgba(11,11,11,0)
-    );
-    z-index: 2;
+    display: none;
   }
 
   .hero-text {
@@ -226,22 +217,17 @@ li {
 <div class="section">
 <h2>About</h2>
 
-<p>I’ve lived across 9 countries in the US, Europe, and Asia.</p>
+<p>I’ve lived across 9 countries Europe, Asia, and North America.</p>
 
 <p>
-I know what it feels like to not belong anywhere.
-To constantly adjust, perform, prove, and question who you really are.
+I know what it feels like to not belong anywhere. To constantly adjust, perform, prove, and question who you really are.
+  Or how it feels like to be stuck in a rut.
 </p>
 
 <p>
-After returning to Japan, I experienced a deep disconnect.
-I lost my sense of self and struggled mentally.
-I had to rebuild without support and without being understood.
-</p>
-
-<p>
-Over the past 10 years, I worked through that process.
-Studying psychology, working with individuals, and rebuilding my life intentionally.
+After returning to Japan, I lost my sense of self and sdisconnected from myself.
+Over the past 15 years, I worked through that process.
+Studying psychology, philosophy, and business, working with individuals, and rebuilding my life intentionally with zero support.
 </p>
 
 <p>
@@ -255,7 +241,7 @@ Your masculine: clarity, structure, direction.
 </p>
 
 <p>
-So you can stop drifting and start living your dream life.
+So you can stop drifting and start living your dream life with clafrity and intention.
 </p>
 
 <p>
@@ -266,11 +252,14 @@ It’s about seeing clearly, choosing consciously, and moving forward.
 
 <div class="section">
 <h2>What You Get</h2>
+  <p>
+With her experience as a school\adult coach, she will guide you through:
+</p>
 <ul>
-  <li>Identify what’s actually blocking you</li>
+  <li>Identify your blocks that are sabotaging you</li>
   <li>Cut through confusion and overthinking</li>
   <li>Clear next direction</li>
-  <li>Action steps you can execute immediately</li>
+  <li>Activate your life force energy and action steps you can execute immediately</li>
 </ul>
 </div>
 
